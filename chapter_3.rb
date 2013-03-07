@@ -147,8 +147,6 @@ Gear.new(
 ############## Page 47 ##############
 # This problem is solved in the below example. This uses the special "args" hash 
 # and passes in the arguments that need to be initialized.
-# The benefits are as follows:
-# First: Removes 
 class Gear
   attr_reader :chainring, :cog, :wheel
   def initialize(args)
