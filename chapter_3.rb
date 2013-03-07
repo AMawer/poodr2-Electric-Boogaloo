@@ -172,6 +172,7 @@ Gear.new(
 
 ############## Page 49 ##############
   # specifying defaults using fetch
+  # this is the preferred method for setting a default because it anticipates that the element is in the hash and is extant
   def initialize(args)
     @chainring = args.fetch(:chainring, 40)
     @cog       = args.fetch(:cog, 18)
@@ -191,6 +192,9 @@ Gear.new(
   end
 
 ############## Page 50 ##############
+# Isolating multiparameter initialization is a tactic that helps when interacting with methods that you do not own
+# (and therefore cannot change) and require fixed-order arguments 
+
 # When Gear is part of an external interface
 module SomeFramework
   class Gear
