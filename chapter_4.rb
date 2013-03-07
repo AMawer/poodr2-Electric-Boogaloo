@@ -44,7 +44,19 @@
 # - have names that, insofar as you can anticipate, will not change
 # - take a hash as an options parameter
 
-# Public - unstable
-# Private - 
-# Protected - 
+# Private - most unstable & least visible
+# Protected - unstable & more visible
+# Public - stable & completely visible
+
+# When working with private interfaces, exercise caution and minimize
+# context. 
+
+
+# The Law of Demeter
+# Is a set of coding rules that results in loosely coupled objects.
+# Demeter restricts the set of objects to which a method may send
+# messages; it prohibits routing a message to a third object via
+# a second object of a different type. 
+# "Only talk to your immediate neighbors" or "use only one dot"
+
 
