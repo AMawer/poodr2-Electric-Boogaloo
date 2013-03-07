@@ -273,8 +273,6 @@ GearWrapper.gear(
 
 ############## Page 52 ##############
 # Dependencies always have a direction - one way to manage this is to reverse the direction.
-#  
-
 
 class Gear
   attr_reader :chainring, :cog
@@ -312,3 +310,6 @@ class Wheel
 end
 
 Wheel.new(26, 1.5, 52, 11).gear_inches
+
+# IMPORTANT - Depend on things that change less often than you do
+
