@@ -35,5 +35,16 @@
 # One should be focused on message-based design instead of class-based design
 # That is, focus on the messages (what needs to be sent, where it need to be sent to)
 # then design classes around that.
+# Your application is defined by its interfaces - think about them carefully.
 
+# Every time you create a class, declare its interfaces.
+# Methods in the public interface should...
+# - be explicitly identified as such
+# - be more about what than how
+# - have names that, insofar as you can anticipate, will not change
+# - take a hash as an options parameter
+
+# Public - unstable
+# Private - 
+# Protected - 
 
