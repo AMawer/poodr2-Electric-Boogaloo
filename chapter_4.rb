@@ -58,5 +58,13 @@
 # messages; it prohibits routing a message to a third object via
 # a second object of a different type. 
 # "Only talk to your immediate neighbors" or "use only one dot"
+# Evalute a chain by counting the dots, but if the objects return
+# the same type, Demeter may not be violated.
+# Delegation is a possible solution, but is far from ideal. 
 
+# Summary:
+# Message passing takes place along "public" interfaces; well defined
+# public interfaces consist of stable methods that expose the
+# responsibilities of their underlying classes and provide maximal
+# benefit at minimal cost.
 
