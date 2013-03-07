@@ -1,5 +1,3 @@
-TEST
-
 ############## Page 18 ##############
 chainring = 52                    # number of teeth
 cog       = 11

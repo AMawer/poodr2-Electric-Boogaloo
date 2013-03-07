@@ -126,6 +126,9 @@ def diameter
 end
 
 ############## Page 46 ##############
+# The point illustrated in this is to remove argument-order dependencies.
+# That is, initialize must be run prior to any other methods in order for
+# the other methods that are DEPENDENT on them to work properly.
 class Gear
   attr_reader :chainring, :cog, :wheel
   def initialize(chainring, cog, wheel)
@@ -142,6 +145,10 @@ Gear.new(
   Wheel.new(26, 1.5)).gear_inches
 
 ############## Page 47 ##############
+# This problem is solved in the below example. This uses the special "args" hash 
+# and passes in the arguments that need to be initialized.
+# The benefits are as follows:
+# First: Removes 
 class Gear
   attr_reader :chainring, :cog, :wheel
   def initialize(args)
