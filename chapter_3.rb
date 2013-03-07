@@ -223,6 +223,8 @@ GearWrapper.gear(
   :cog       => 11,
   :wheel     => Wheel.new(26, 1.5)).gear_inches
 
+# An object that's sole purpose is to create other objects is called a factory.
+
 ############## Page ?? ##############
 # This is the complete code for example above
 module SomeFramework
@@ -270,6 +272,10 @@ GearWrapper.gear(
   :wheel     => Wheel.new(26, 1.5)).gear_inches
 
 ############## Page 52 ##############
+# Dependencies always have a direction - one way to manage this is to reverse the direction.
+#  
+
+
 class Gear
   attr_reader :chainring, :cog
   def initialize(chainring, cog)
