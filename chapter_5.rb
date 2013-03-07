@@ -1,3 +1,9 @@
+# Duck Typing
+# Duck types are public interfaces that are not tied to
+# any specific class. These objects are defined more by their 
+# behavior than by their class. 
+# If an object quacks like a duck and walks like a duck, then it's immaterial, it's a duck.
+
 ############## Page 87 ##############
 class Trip
   attr_reader :bicycles, :customers, :vehicle
