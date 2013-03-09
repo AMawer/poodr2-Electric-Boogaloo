@@ -160,6 +160,9 @@ def first(*args)
   end
 end
 
+# 
+
+
 # Duck typing detaches public interfaces from specific 
 # classes creating virtual types that are defined by
 # what they do instead of by who they are.

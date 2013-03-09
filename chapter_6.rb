@@ -1,3 +1,9 @@
+# Automatic message delegation is a way to think
+# about inheritance. It defines a forwarding path
+# for not-understood messages.
+# Classical inheritance is a play on the word "class"
+# 
+
 ############## Page 107 ##############
 class Bicycle
   attr_reader :size, :tape_color
@@ -29,6 +35,9 @@ bike.spares
 #     :tape_color  => "red"}
 
 ############## Page 110 ##############
+# Beware of code that seems like it's saying
+# "I know who you are and because of that I know what you do"
+
 class Bicycle
   attr_reader :style, :size, :tape_color,
               :front_shock, :rear_shock
@@ -111,6 +120,7 @@ class MountainBike < Bicycle
   # Still a subclass of Bicycle (which is now empty).
   # Code has not changed.
 end
+# Subclasses are specializations of their superclass.
 
 ############## Page 120 ##############
 road_bike = RoadBike.new(
@@ -127,6 +137,10 @@ mountain_bike = MountainBike.new(
 mountain_bike.size
 # NoMethodError: undefined method `size'
 
+
+# The template method pattern defines a basic structure in
+# the superclass and sending messages to acquire subclass
+# -nspecific contributions.
 ############## Page ?? ##############
 # This is the complete code for example above
 class Bicycle
@@ -769,3 +783,10 @@ bent.spares
 # -> {:tire_size => "28",
 #     :chain     => "10-speed",
 #     :flag      => "tall and orange"}
+
+
+# Summary
+# The best way to create an abstract superclass is by 
+# pushing code up from concrete subclasses. Identifying
+# the best form of abstraction is easiest if you have
+# access to at least three existing concrete classes
