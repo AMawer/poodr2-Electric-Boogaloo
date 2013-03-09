@@ -789,4 +789,10 @@ bent.spares
 # The best way to create an abstract superclass is by 
 # pushing code up from concrete subclasses. Identifying
 # the best form of abstraction is easiest if you have
-# access to at least three existing concrete classes
+# access to at least three existing concrete classes.
+
+# Abstract superclasses use the template method pattern
+# to invite inheritors to supply specializations, and use
+# hook methods to allow these inheritors to contribute these
+# specializations without being forced to send super.
+# Hook methods?
