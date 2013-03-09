@@ -159,4 +159,13 @@ def first(*args)
     find_first
   end
 end
-# !x
+
+# Duck typing detaches public interfaces from specific 
+# classes creating virtual types that are defined by
+# what they do instead of by who they are.
+
+# Although duck typing is more abstract, it is far
+# more flexible.
+
+
+
