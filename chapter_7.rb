@@ -1,3 +1,6 @@
+# Pg 145 & 146 (book) diagrams are helpful
+# 
+
 ############## Page 148 ##############
 class Schedule
   def scheduled?(schedulable, start_date, end_date)
