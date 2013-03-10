@@ -516,3 +516,14 @@ recumbent_bike.spares
 #       name="flag",
 #       description="tall and orange",
 #       needs_spare=true>]
+
+# Composition often involves delegation. A composed object
+## is made up of parts with which it expects to interact via
+## well-defined interfaces. Composition describes a has-a
+## relationship. 
+
+# Use Inheritance for is-a relationships
+# Use Duck Types for behaves-like-a relationships
+# Use Composition for has-a relationships
+
+

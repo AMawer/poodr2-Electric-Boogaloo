@@ -127,3 +127,16 @@ m.schedulable?(starting, ending)
 # This Mechanic is not scheduled
 #   between 2015-08-31 and 2015-09-10
 #  => true
+
+##
+# Liskov Substitution Principle (LSP)
+## In plain English: In order for a type system to be sane, 
+## sub-types must be substitutable for their supertypes. 
+# Template method pattern:
+## This pattern is what allows you to seperate the abstract
+## from the concrete. The abstract code defines the algorithms
+## and the concrete inheritors of that abstraction contribute.
+# Shallow, narrow hierarchies are easy to understand. Shallow,
+## wide are more complicated, but still understandable. Deep
+##  hierarchies are difficult to understand and to maintain.
+
