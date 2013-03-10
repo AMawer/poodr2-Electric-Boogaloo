@@ -524,6 +524,6 @@ recumbent_bike.spares
 
 # Use Inheritance for is-a relationships
 # Use Duck Types for behaves-like-a relationships
-# Use Composition for has-a relationships
+# Use Composition for has-a relationships.
 
 
